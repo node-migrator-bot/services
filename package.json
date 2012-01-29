@@ -12,7 +12,7 @@
   "main"          : "./lib/init",
   "directories" : { "lib" : "./lib"	},
 
-  "version"       : "0.0.1",
+  "version"       : "0.0.3",
 
   "dependencies": {
     "underscore": ">=1.3.0",
