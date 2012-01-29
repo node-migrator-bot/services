@@ -2,6 +2,36 @@
 
 Services will provide a servce layer for node js. It is inspired by the OSGi Declarative Services and allows modules/packages to publish services without a dependency on the Service JS layer itself. 
 
+### How to install 
+
+npm install services
+
+To see a running exmaple is the best that you also install the commandline and services-commandline.
+
+npm install commandline
+npm install services-commandline
+
+
+### How to configure and start services.
+
+In order to configure the services you must create a json file. For example _config.json_
+The configuration is a simple map. The key is the name of the package/module which should be started and the value is "true" or a map. 
+
+Example:
+	
+	commandline: true,
+	services-commandline: true,
+
+The config.json will start two packages (commandline and service-commandline). The commandline start a simple commandline interface which can be extended via services. 
+The services-commandline provides new commands for the commandline to control the service layer.
+
+You can now write a little module which will simple start and configure the service layer.
+
+	var services = require("services");
+	services.configure("path/to/your/config.json");
+
+The service layer up and running. The terminal should show you the commandline interface. Type help to get a overview of available commands. Type exit to go back to the node js repl.
+
 ### CommandlineService Example
 The service layer extends the specification of the package.json
 
