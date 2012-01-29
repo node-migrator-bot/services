@@ -8,7 +8,7 @@
                     ],
   "author"        : "dkuffner@chilicat.net",
   "contributors"  : [ ],
-  "repository"    : {"type": "git", "url": "git://github.com/services.git"},
+  "repository"    : {"type": "git", "url": "git://github.com/chilicat/services.git"},
   "main"          : "./lib/init",
   "directories" : { "lib" : "./lib"	},
 
