@@ -1,0 +1,33 @@
+{
+  "name"          : "services-commandline",
+  "description"   : "A Service layer for javascript server environment.",
+  "homepage"      : "",
+  "keywords"      : [ "server", "service", "services", 
+                      "osgi", "osgijs", "spring", 
+                      "dependency injection"
+                    ],
+  "author"        : "dkuffner@chilicat.net",
+  "contributors"  : [ ],
+  "repository"    : {"type": "git", "url": "git://github.com/services.git"},
+  "main"          : "./lib/init",
+  "directories" : { "lib" : "./lib"	},
+
+  "version"       : ">=0.4.9",
+
+  "dependencies": {
+    "underscore": ">=1.3.0",
+    "underscore.string": ">=2.0.0"
+  },
+
+  "engines": {
+    "node": "*"
+  },
+
+  "services"      : [
+      { 
+        "name": "Services API",
+        "module": "./services_api",
+        "provides": [ "services-api" ]  
+      }
+  ]
+}
