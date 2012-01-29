@@ -1,5 +1,4 @@
 
-
 A service is able to consume other services by observing the metadata of all installed packages/services. The service has also a specifed lifecircle. E.g. it is possible to stop a service. Other services can react on this event and can update the inner configurtion has needed.
 
 CommandlineService Example
@@ -7,7 +6,7 @@ The service layer extends the specification of the package.json
 
 package.json:
 
-{
+
 	// ...
 
 	"services": [
@@ -28,7 +27,7 @@ package.json:
 
 		// multiple services possible.
 	]
-}
+
 
 The package json has a new top level section called "services". It wil contain a list of service declarations. A service declartion must specify a module. The module must be available in the "lib" path. 
 
