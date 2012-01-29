@@ -1,6 +1,6 @@
 {
-  "name"          : "services-commandline",
-  "description"   : "A Service layer for javascript server environment.",
+  "name"          : "services",
+  "description"   : "A Service layer for node js.",
   "homepage"      : "",
   "keywords"      : [ "server", "service", "services", 
                       "osgi", "osgijs", "spring", 
@@ -20,7 +20,7 @@
   },
 
   "engines": {
-    "node": "*"
+    "node": ">=0.4.9"
   },
 
   "services"      : [
