@@ -8,9 +8,12 @@ npm install services
 
 To see a running exmaple is the best that you also install the commandline and services-commandline.
 
+
+
+```
 npm install commandline
 npm install services-commandline
-
+```
 
 ### How to configure and start services.
 
@@ -18,9 +21,14 @@ In order to configure the services you must create a json file. For example _con
 The configuration is a simple map. The key is the name of the package/module which should be started and the value is "true" or a map. 
 
 Example:
-	
+
+```
+{
 	commandline: true,
 	services-commandline: true,
+}
+```
+
 
 The config.json will start two packages (commandline and service-commandline). The commandline start a simple commandline interface which can be extended via services. 
 The services-commandline provides new commands for the commandline to control the service layer.
@@ -37,6 +45,10 @@ The service layer extends the specification of the package.json
 
 package.json:
 
+```
+{
+	// ...
+	
 	"services": [
 		{ 
 			"module": "./comandline-service",
@@ -55,7 +67,8 @@ package.json:
 
 		// multiple services possible.
 	]
-
+}
+```
 
 The package json has a new top level section called "services". It contains a list of service declarations. A service declaration must specify a module. The module must be available in the "lib" path. 
 
