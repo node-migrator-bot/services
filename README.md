@@ -16,6 +16,9 @@ npm install commandline
 npm install services-commandline
 ```
 
+See: [commandline](https://github.com/chilicat/commandline), [services-commandline](https://github.com/chilicat/services-commandline)
+
+
 ### How to configure and start services.
 
 In order to configure the services you must create a json file. For example _config.json_
