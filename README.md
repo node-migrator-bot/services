@@ -1,6 +1,6 @@
 ### Services JS
 
-Services will provide a servce layer for node js. It is inspired by the OSGi Declarative Services and allows modules/packages to publish services without a dependency on the Service JS layer itself. 
+Services will provide a servce layer for node js. It is inspired by the OSGi Declarative Services and allows packages to publish and consume services without a dependency on the Service JS layer itself. 
 
 ### How to install 
 
