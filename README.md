@@ -43,7 +43,7 @@ services.configure("path/to/your/config.json");
 The service layer up and running. The terminal should show you the commandline interface. Type help to get a overview of available commands. Type exit to go back to the node js repl.
 
 ### CommandlineService Example
-The service layer extends the specification of the package.json
+The service layer extends the specification of the package.json.
 
 package.json:
 
