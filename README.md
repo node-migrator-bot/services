@@ -9,10 +9,13 @@ See [Terminology](https://github.com/chilicat/services/wiki/Terminology)
 
 ### How to install 
 
+Use npm to install the service layer.
+
+```
 npm install services
+```
 
 To see a running example is the best that you also install the _commandline_ and _services-commandline_.
-
 
 ```
 npm install commandline
@@ -25,7 +28,7 @@ See: [commandline](https://github.com/chilicat/commandline), [services-commandli
 ### How to configure and start services.
 
 In order to configure the services you must create a json file. For example _config.json_
-The configuration is a simple map. The key is the name of the package/module which should be started and the value is "true" or a map. 
+The configuration is a simple map. The key is the name of the package which should be started and the value is "true" or a map. 
 
 Example:
 
@@ -36,22 +39,25 @@ Example:
 }
 ```
 
-
-The config.json will start two packages (commandline and service-commandline). The "commandline" start a simple commandline interface which can be extended via services. 
+The config.json will start two packages (commandline and service-commandline). The "commandline" starts a simple commandline interface which can be extended via services. 
 The "services-commandline" provides new commands for the commandline to control the service layer.
 
 You can now write a little module which will simple start and configure the service layer.
-
 
 ```
 var services = require("services");
 services.configure("path/to/your/config.json");
 ```
 
-The service layer up and running. The terminal should show you the commandline interface. Type help to get a overview of available commands. Type exit to go back to the node js repl.
+If you call ```services.configure()``` than will services search for a config.json file in the current working directory.
+
+The service layer is up and running. The terminal should show you the commandline interface. Type help to get a overview of available commands. Type exit to go back to the node js repl.
 
 ### CommandlineService Example
+
 The service layer extends the specification of the package.json.
+That allows us to declare services without a dependecy on the service layer itself.
+
 
 package.json:
 
