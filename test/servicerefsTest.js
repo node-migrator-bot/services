@@ -1,8 +1,4 @@
 var should = require("should");
-var mocha = require("mocha");
-
-console.log(mocha);
-console.log(should);
 
 var Ref = require("../lib/servicerefs").SimpleServiceRef;
 
