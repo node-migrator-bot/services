@@ -1,6 +1,6 @@
 ### Services JS
 
-[![Build Status](https://secure.travis-ci.org/travis-ci/travis-ci.png?branch=master)]((http://travis-ci.org/chilicat/services)
+[![Build Status](https://secure.travis-ci.org/travis-ci/travis-ci.png?branch=master)](http://travis-ci.org/chilicat/services)
 
 
 Services will provide a servce layer for node js. It is inspired by the OSGi Declarative Services and allows packages to publish and consume services without a dependency on the Service JS layer itself. 
